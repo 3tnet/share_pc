@@ -1,0 +1,11 @@
+body{
+    background-color: #f9f9f9;
+}
+footer.footer{
+    background-color: #fff;
+    height: 50px;
+}
+footer.footer>p{
+    line-height: 50px;
+    margin: 0;
+}

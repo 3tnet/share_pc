@@ -1,0 +1,27 @@
+
+/*导航栏*/
+.navbar{
+    margin: 0;
+    border-radius: 0;
+}
+/*巨幕*/
+.jumbotron{
+    background-color: #393E46;
+}
+.jumbotron h1{
+    font-size: 30px;
+    color:#fff;
+}
+.jumbotron p{
+    font-size: 16px;
+    color:#fff;
+}
+/*视频列表*/
+.video_list{
+    width: 750px;
+    min-height: 500px;
+}
+.list-group-item>p {
+    margin: 0;
+
+}
