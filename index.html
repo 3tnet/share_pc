@@ -1,85 +1,332 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>E8内部资料</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link href="css/comm.css" rel="stylesheet">
-  </head>
-  <body>
-    <!--导航栏-->
-  <nav class="navbar  navbar-inverse">
-      <div class="container">
+</head>
+<body>
+<!--导航栏-->
+<nav class="navbar  navbar-inverse">
+    <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Brand</a>
-      </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">E8</a>
+        </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="请输入关键字">
-            </div>
-            <button type="submit" class="btn btn-default">搜索</button>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="请输入关键字">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
 
-          </form>
-          <div class="btn-group pull-right navbar-form" role="group" aria-label="...">
-            <button type="button" class="btn">登录</button>
-            <button type="button" class="btn btn-primary">注册</button>
-          </div>
+            </form>
+            <div class="btn-group pull-right navbar-form" role="group" aria-label="...">
+                <button type="button" class="btn">登录</button>
+                <button type="button" class="btn btn-primary">注册</button>
+            </div>
         </div><!-- /.navbar-collapse -->
 
-      </div><!-- /.container -->
-    </nav>
-    <!--巨幕-->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Laravel 5 开发 API 教程</h1>
-        <p>在目前的移动互联网之下，Api开发到处可见，这一套视频就是讲解怎么利用Laravel 5 开发一套Api。感谢有视频用户支持API的不规范支持，鉴于谨慎的原因，视频标题已改为 《Laravel 5 开发 API 教程》</p>
-      </div>
+    </div><!-- /.container -->
+</nav>
+<div class="container Carousel_pic">
+    <!--视频分类-->
+    <div class="col-lg-3 video_classify clearfix">
+        <div class="menuContent" id="menuContent">
+            <ul>
+                <li data-detail-id="menuContent_detail_1">
+                    <div>
+                        <a href="#" class="menuContent_title">前端开发</a>
+                        <p class="menuContent_cont">
+                            <a href="#">HTML/CSS</a>
+                            <a href="#">Javascript</a>
+                            <a href="#">HTML5</a>
+                        </p>
+                    </div>
+                </li>
+                <li data-detail-id="menuContent_detail_2">
+                    <div>
+                        <a href="#" class="menuContent_title">后端开发</a>
+                        <p class="menuContent_cont">
+                            <a href="#">PHP</a>
+                            <a href="#">Java</a>
+                            <a href="#">C</a>
+                        </p>
+                    </div>
+                </li>
+                <li data-detail-id="menuContent_detail_3">
+                    <div>
+                        <a href="#" class="menuContent_title">移动开发</a>
+                        <p class="menuContent_cont">
+                            <a href="#">Android</a>
+                            <a href="#">iOS</a>
+                            <a href="#">Cocos2d</a>
+                        </p>
+                    </div>
+                </li>
+                <li data-detail-id="menuContent_detail_4">
+                    <div>
+                        <a href="#" class="menuContent_title">图像处理</a>
+                        <p class="menuContent_cont">
+                            <a href="#">Photoshop</a>
+                            <a href="#">Firework</a>
+                            <a href="#">flash</a>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="menuContent_detail_1">
+            <div class="menuContent_detail_bg"></div>
+            <div class="menuContent_detail">
+                <h3>前端开发</h3>
+                <ul>
+                    <li><a href="#" style="background-color: #61C2F8">HTML/CSS</a></li>
+                    <li><a href="#" style="background-color: #993366">JS</a></li>
+                    <li><a href="#" style="background-color: #0A91DA">jQuery</a></li>
+                    <li><a href="#" style="background-color: #DF9E73">H5</a></li>
+                    <li><a href="#" style="background-color: #ABDD78">Node.js</a></li>
+                    <li><a href="#" style="background-color: #F01400">Angular.js</a></li>
+                    <li><a href="#" style="background-color: #0978B5">CSS3</a></li>
+                    <li><a href="#" style="background-color: #B690F7">Bootstrap</a></li>
+                </ul>
+                <h3>推荐课程</h3>
+                <p>JavaScript深入浅出</p>
+                <p>PS入门基础-魔幻调色</p>
+                <p>HTML5音乐可视化</p>
+            </div>
+        </div>
+
+
+        <div id="menuContent_detail_2">
+            <div class="menuContent_detail_bg"></div>
+            <div class="menuContent_detail">
+                <h3>后端开发</h3>
+                <ul>
+                    <li><a href="#" style="background-color: #0978B5">PHP</a></li>
+                    <li><a href="#" style="background-color: #FF9900">Java</a></li>
+                    <li><a href="#" style="background-color: #ABDD78">Linux</a></li>
+                    <li><a href="#" style="background-color: #F01400">C#</a></li>
+                    <li><a href="#" style="background-color: #51FF51">数据结构</a></li>
+                    <li><a href="#" style="background-color: #FF0000">C</a></li>
+                </ul>
+                <h3>推荐课程</h3>
+                <p>JavaScript深入浅出</p>
+                <p>PS入门基础-魔幻调色</p>
+                <p>HTML5音乐可视化</p>
+            </div>
+        </div>
+
+
+        <div id="menuContent_detail_3">
+            <div class="menuContent_detail_bg"></div>
+            <div class="menuContent_detail">
+                <h3>移动开发</h3>
+                <ul>
+                    <li><a href="#" style="background-color: #0978B5">Android</a></li>
+                    <li><a href="#" style="background-color: #CCCCCC">iOS</a></li>
+                    <li><a href="#" style="background-color: #61C2F8">Unity 3D</a></li>
+                    <li><a href="#" style="background-color: #F01400">Cocos2d</a></li>
+                </ul>
+                <h3>推荐课程</h3>
+                <p>JavaScript深入浅出</p>
+                <p>PS入门基础-魔幻调色</p>
+                <p>HTML5音乐可视化</p>
+            </div>
+        </div>
+
+        <div id="menuContent_detail_4">
+            <div class="menuContent_detail_bg"></div>
+            <div class="menuContent_detail">
+                <h3>图像处理</h3>
+                <ul>
+                    <li><a href="#" style="background-color: #0A91DA">PS</a></li>
+                    <li><a href="#" style="background-color: #A56F00">FW</a></li>
+                    <li><a href="#" style="background-color: #FF0000">Fl</a></li>
+                    <li><a href="#" style="background-color: #53FA00">DW</a></li>
+                </ul>
+                <h3>推荐课程</h3>
+                <p>JavaScript深入浅出</p>
+                <p>PS入门基础-魔幻调色</p>
+                <p>HTML5音乐可视化</p>
+            </div>
+        </div>
+
     </div>
-    <!--列表-->
-    <div class="container video_list">
-      <div class="list-group">
-        <a href="#" class="list-group-item active">
-          Laravel 5 开发 API 教程
+    <!--轮播大图-->
+    <div id="carousel-example-generic" class="carousel slide col-lg-9" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="pic/big_pic1.jpg" alt="...">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <img src="pic/big_pic2.jpg" alt="...">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <img src="pic/big_pic3.jpg" alt="...">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
         </a>
-        <a href="#" class="list-group-item clearfix">
-          <p class="col-lg-2">1</p>
-          <p class="col-lg-8">初步实现 API 系统</p>
-          <p class="col-lg-2">08:12</p>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
         </a>
-        <a href="#" class="list-group-item clearfix">
-          <p class="col-lg-2">2</p>
-          <p class="col-lg-8">初步实现 API 系统</p>
-          <p class="col-lg-2">08:12</p>
-        </a>
-        <a href="#" class="list-group-item clearfix">
-          <p class="col-lg-2">3</p>
-          <p class="col-lg-8">初步实现 API 系统</p>
-          <p class="col-lg-2">08:12</p>
-        </a>
-        <a href="#" class="list-group-item clearfix">
-          <p class="col-lg-2">4</p>
-          <p class="col-lg-8">初步实现 API 系统</p>
-          <p class="col-lg-2">08:12</p>
-        </a>
-      </div>
     </div>
-    <footer class="footer">
-      <p class="text-center">E8net-3t小组</p>
-    </footer>
-    <!--js-->
-    <script src="js/jquery-2.1.4.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+</div>
+<!--视频列表-->
+<div class="container">
+    <div class="row">
+        <h2 class="video_list_name"><a href="#">热门搜索</a></h2>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_01.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_02.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_03.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_04.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h2 class="video_list_name"><a href="#">最新上传</a></h2>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_01.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_02.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_03.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_04.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+
+</div>
+<!--底部导航-->
+<footer class="footer">
+    <p class="text-center">E8net-3t小组</p>
+</footer>
+<!--js-->
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(function (){
+
+        var currentCate = null; //当前显示的分类详情
+        var menuContentLi = $("#menuContent>ul>li");
+
+        var menuContentDetail = $(".menuContent_detail");
+        var flag = false;
+        menuContentDetail.mouseover(function () {
+            flag = true;
+        }).mouseout(function () {
+            flag = false
+        });
+        menuContentLi.mouseenter(function (){
+            var c = $('#'+$(this).attr('data-detail-id'));
+            if(currentCate !=null && c != currentCate){
+                currentCate.hide();
+            }
+            currentCate = c;
+            currentCate.show();
+        });
+        $(".video_classify").mouseleave(function () {
+            if(!flag){
+                currentCate.hide();
+            }
+        });
+    });
+</script>
+</body>
 </html>

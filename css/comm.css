@@ -9,3 +9,28 @@ footer.footer>p{
     line-height: 50px;
     margin: 0;
 }
+/*导航栏*/
+.navbar{
+    margin: 0;
+    border-radius: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.navbar-form,.form-group {
+    float: left;
+}
+/*媒体查询*/
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+
+}
