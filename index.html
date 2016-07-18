@@ -7,6 +7,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link href="css/comm.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <!--导航栏-->
@@ -26,13 +27,14 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="请输入关键字">
+                <div class="input-group">
+                    <input type="text" class="form-control search_box" placeholder="请输入关键字">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                    </span>
                 </div>
-                <button type="submit" class="btn btn-default">搜索</button>
-
             </form>
-            <div class="btn-group pull-right navbar-form" role="group" aria-label="...">
+            <div class="btn-group pull-right login-btn" role="group" aria-label="...">
                 <button type="button" class="btn">登录</button>
                 <button type="button" class="btn btn-primary">注册</button>
             </div>
@@ -40,8 +42,8 @@
 
     </div><!-- /.container -->
 </nav>
+<!--视频分类-->
 <div class="container Carousel_pic">
-    <!--视频分类-->
     <div class="col-lg-3 video_classify clearfix">
         <div class="menuContent" id="menuContent">
             <ul>
@@ -108,8 +110,6 @@
                 <p>HTML5音乐可视化</p>
             </div>
         </div>
-
-
         <div id="menuContent_detail_2">
             <div class="menuContent_detail_bg"></div>
             <div class="menuContent_detail">
@@ -128,8 +128,6 @@
                 <p>HTML5音乐可视化</p>
             </div>
         </div>
-
-
         <div id="menuContent_detail_3">
             <div class="menuContent_detail_bg"></div>
             <div class="menuContent_detail">
@@ -146,7 +144,6 @@
                 <p>HTML5音乐可视化</p>
             </div>
         </div>
-
         <div id="menuContent_detail_4">
             <div class="menuContent_detail_bg"></div>
             <div class="menuContent_detail">
@@ -207,7 +204,7 @@
 <!--视频列表-->
 <div class="container">
     <div class="row">
-        <h2 class="video_list_name"><a href="#">热门搜索</a></h2>
+        <h2 class="video_list_name"><a href="#">热门视频</a></h2>
         <div class="col-sm-6 col-md-3 col-xs-6">
             <div class="thumbnail">
                 <img src="pic/video_pic/Git_01.jpg">
@@ -250,7 +247,7 @@
         </div>
     </div>
     <div class="row">
-        <h2 class="video_list_name"><a href="#">最新上传</a></h2>
+        <h2 class="video_list_name video_list_name2"><a href="#">最新上传</a></h2>
         <div class="col-sm-6 col-md-3 col-xs-6">
             <div class="thumbnail">
                 <img src="pic/video_pic/Git_01.jpg">
@@ -291,21 +288,223 @@
                 </div>
             </div>
         </div>
-
+    </div>
+</div>
+<!--大图-->
+<div class="container bg_pic">
+    <div class="warp">
+        <h2>随时不随地学</h2>
+        <p>响应式让你多终端感受智能学习体验</p>
+    </div>
+</div>
+<!--视频列表-->
+<div class="container">
+    <div class="row">
+        <h2 class="video_list_name"><a href="#">前端开发</a></h2>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_01.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_02.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_03.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_04.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h2 class="video_list_name video_list_name2"><a href="#">后端开发</a></h2>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_01.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_02.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_03.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_04.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h2 class="video_list_name video_list_name2"><a href="#">移动开发</a></h2>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_01.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_02.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_03.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_04.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h2 class="video_list_name video_list_name2"><a href="#">图像处理</a></h2>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_01.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_02.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_03.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-xs-6">
+            <div class="thumbnail">
+                <img src="pic/video_pic/Git_04.jpg">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                    <p>2016年4月8日</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!--底部导航-->
 <footer class="footer">
-    <p class="text-center">E8net-3t小组</p>
+    <p class="text-center">&copy;E8net-3t小组</p>
 </footer>
+<!--回到顶部-->
+<div class="onTop" id="onTop"><span>回到<br />顶部<span></div>
 <!--js-->
 <script src="js/jquery-2.1.4.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
+    window.onload = function(){
+        var OnTop = document.getElementById('onTop');
+        window.onscroll = function (){
+            if(document.body.scrollTop>200){
+                OnTop.style.display="block";
+            }else{
+                OnTop.style.display="none";
+            }
+        }
+        var clientHeight = document.body.clientHeight;
+        OnTop.onclick = function(){
+            var timer = setInterval(function(){
+                if(document.body.scrollTop>0){
+                    document.body.scrollTop-=(clientHeight-document.body.scrollTop)/30
+                }else{
+                    clearInterval(timer)
+                }
+            },10)
+        }
+    }
     $(function (){
-
         var currentCate = null; //当前显示的分类详情
         var menuContentLi = $("#menuContent>ul>li");
-
         var menuContentDetail = $(".menuContent_detail");
         var flag = false;
         menuContentDetail.mouseover(function () {

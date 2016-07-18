@@ -1,6 +1,7 @@
 /*巨幕*/
 .jumbotron{
     background-color: #393E46;
+    padding-top:100px;
 }
 .jumbotron h1{
     font-size: 30px;
@@ -12,7 +13,7 @@
 }
 /*视频列表*/
 .video_list{
-    min-height: 500px;
+    min-height: 350px;
 }
 .list-group-item>p {
     margin: 0;
