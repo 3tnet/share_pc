@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>E8内部资料</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/search.css" rel="stylesheet">
+    <link href="css/comm.css" rel="stylesheet">
+</head>
+<body>
+<!--导航栏-->
+<nav class="navbar e8-nav navbar-inverse">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">E8</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control search_box" placeholder="请输入关键字">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                </span>
+                </div>
+            </form>
+            <div class="btn-group pull-right login-btn" role="group" aria-label="...">
+                <a href="login.html" role="button" class="btn btn-default">登录</a>
+                <button type="button" id="register" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="sorry! The register function only open by E8 member.">
+                    注册
+                </button>
+            </div>
+        </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container -->
+</nav>
+<!--搜索-->
+<div class="search_container">
+    <div class="text-center search_logo"><img src="pic/search_logo.png"></div>
+    <div class="search_banner text-center">
+        <input type="search" placeholder="请输入关键字" id="search_box"/>
+        <span class="glyphicon glyphicon-remove delete_text" id="clear_text" aria-hidden="true"></span>
+        <button>搜索</button>
+        <div class="search_tip" id="search_tip">
+            <ul>
+                <li><a href="#">PHP是世界上最好的语言</a></li>
+                <li><a href="#">PHP最牛逼！</a></li>
+                <li><a href="#">PHP架构超大型网站</a></li>
+                <li><a href="#">PHP培训</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="search_main"></div>
+</div>
+<!--搜索列表-->
+<div class="search_list">
+    <div class="container">
+        <ol class="breadcrumb Route">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">搜索</a></li>
+            <li class="active">PHP</li>
+        </ol>
+        <div class="search_list_main col-lg-8">
+            <div class="col-sm-4 col-md-4 col-xs-6">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="pic/video_pic/Git_01.jpg">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                            <p>2016年4月8日</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-4 col-xs-6">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="pic/video_pic/Git_01.jpg">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                            <p>2016年4月8日</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-4 col-xs-6">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="pic/video_pic/Git_01.jpg">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                            <p>2016年4月8日</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-4 col-xs-6">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="pic/video_pic/Git_01.jpg">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                            <p>2016年4月8日</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-4 col-xs-6">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="pic/video_pic/Git_01.jpg">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                            <p>2016年4月8日</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-4 col-xs-6">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="pic/video_pic/Git_01.jpg">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                            <p>2016年4月8日</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-4 col-xs-6">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="pic/video_pic/Git_01.jpg">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                            <p>2016年4月8日</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-4 col-xs-6">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="pic/video_pic/Git_01.jpg">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                            <p>2016年4月8日</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-4 col-xs-6">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="pic/video_pic/Git_01.jpg">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                            <p>2016年4月8日</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-4 col-xs-6">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="pic/video_pic/Git_01.jpg">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                            <p>2016年4月8日</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-4 col-xs-6">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="pic/video_pic/Git_01.jpg">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                            <p>2016年4月8日</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-4 col-xs-6">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="pic/video_pic/Git_01.jpg">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                            <p>2016年4月8日</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--热门搜索-->
+        <div class="hot_search visible-lg-block col-lg-4">
+            <h3>热门搜索</h3>
+            <ul>
+                <li><a href="#" style="background-color: #61C2F8">HTML/CSS</a></li>
+                <li><a href="#" style="background-color: #993366">JS</a></li>
+                <li><a href="#" style="background-color: #0A91DA">jQuery</a></li>
+                <li><a href="#" style="background-color: #DF9E73">H5</a></li>
+                <li><a href="#" style="background-color: #ABDD78">Node.js</a></li>
+                <li><a href="#" style="background-color: #F01400">Angular.js</a></li>
+                <li><a href="#" style="background-color: #0978B5">CSS3</a></li>
+                <li><a href="#" style="background-color: #B690F7">Bootstrap</a></li>
+                <li><a href="#" style="background-color: #0978B5">PHP</a></li>
+                <li><a href="#" style="background-color: #FF9900">Java</a></li>
+                <li><a href="#" style="background-color: #ABDD78">Linux</a></li>
+                <li><a href="#" style="background-color: #F01400">C#</a></li>
+                <li><a href="#" style="background-color: #51FF51">数据结构</a></li>
+                <li><a href="#" style="background-color: #FF0000">C</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--分页-->
+    <nav class="text-center">
+        <ul class="pagination">
+            <li class="active"><a href="#">首页</a></li>
+            <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+            <li><a href="#">尾页</a></li>
+        </ul>
+    </nav>
+</div>
+<!--底部-->
+<footer class="footer">
+    <p class="text-center">E8net-3t小组</p>
+</footer>
+<!--回到顶部-->
+<div class="onTop" id="onTop"><span>回到<br />顶部<span></div>
+<!--js-->
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/comm.js"></script>
+<script>
+    $(function () {
+        //输入框
+        var searchBox = $("#search_box");
+        var clearText = $("#clear_text");
+        var searchTip = $("#search_tip");
+        searchBox.keyup(function(){
+            if(searchBox.val() != ''){
+                clearText.fadeIn(150);
+                searchTip.fadeIn(150);
+            }
+            else {
+                clearText.fadeOut(150);
+                searchTip.fadeOut(150);
+            }
+        });
+        clearText.click(function () {
+            searchBox.val('');
+            clearText.fadeOut(150);
+            searchTip.fadeOut(150);
+        });
+    })
+</script>
+</body>
+</html>
