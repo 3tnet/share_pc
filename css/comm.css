@@ -1,5 +1,6 @@
 body{
     background-color: #f9f9f9;
+    font-family: 'Microsoft YaHei';
 }
 footer.footer{
     background-color: #fff;
@@ -10,17 +11,17 @@ footer.footer>p{
     margin: 0;
 }
 /*导航栏*/
-.navbar{
+.e8-nav{
     margin: 0;
     border-radius: 0;
     position: fixed;
     width: 100%;
     z-index: 999;
 }
-.navbar-form,.form-group {
+.e8-nav .navbar-form,.e8-nav .form-group {
     float: left;
 }
-.form-group{
+.e8-nav .form-group{
     width: 100%;
 }
 /*搜索*/
