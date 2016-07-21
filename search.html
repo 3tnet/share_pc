@@ -51,11 +51,7 @@
         <span class="glyphicon glyphicon-remove delete_text" id="clear_text" aria-hidden="true"></span>
         <button>搜索</button>
         <div class="search_tip" id="search_tip">
-            <ul>
-                <li><a href="#">PHP是世界上最好的语言</a></li>
-                <li><a href="#">PHP最牛逼！</a></li>
-                <li><a href="#">PHP架构超大型网站</a></li>
-                <li><a href="#">PHP培训</a></li>
+            <ul id="search_tip_ul">
             </ul>
         </div>
     </div>
@@ -275,6 +271,7 @@
         var searchBox = $("#search_box");
         var clearText = $("#clear_text");
         var searchTip = $("#search_tip");
+        var searchTipUl = $("#search_tip_ul");
         searchBox.keyup(function(){
             if(searchBox.val() != ''){
                 clearText.fadeIn(150);
@@ -284,6 +281,9 @@
                 clearText.fadeOut(150);
                 searchTip.fadeOut(150);
             }
+            Ajax('http://192.168.7.242/share/Mobile/Index/search/name/'+searchBox.val(),function(data){
+                searchTipUl.html(data);
+            })
         });
         clearText.click(function () {
             searchBox.val('');

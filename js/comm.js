@@ -21,3 +21,26 @@ $(function(){
         },10)
     }
 })
+//Ajax
+function Ajax(url,fnSucc,fnError){
+    // 1创建Ajax对象
+    if(window.XMLHttpRequest){
+        var oAjax = new XMLHttpRequest();
+    }else{
+        var oAjax = new ActiveXObject(Microsoft.XMLHTTP);
+    }
+    // 2服务器建立连接
+    oAjax.open('get',url+'?t='+new Date().getTime(),true);
+    // 3发送请求
+    oAjax.send();
+    //4接受数据
+    oAjax.onreadystatechange = function(){
+        if(oAjax.readyState == 4 && oAjax.status == 200){
+            fnSucc(oAjax.responseText);
+        }else{
+            if(fnError){
+                fnError();
+            }
+        }
+    }
+}

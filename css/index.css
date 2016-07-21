@@ -88,8 +88,10 @@
     padding: 0;
     margin: 0;
 }
-.menuContent_detail p{
+.menuContent_detail>a{
     color:#ccc;
+    display: block;
+    margin: 15px 0;
 }
 .menuContent_detail ul li{
     float: left;
