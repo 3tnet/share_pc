@@ -34,10 +34,6 @@
     padding:10px 20px;
     margin-bottom: 15px;
 }
-.file_headportrait>.form-group>.file_headportrait_pic{
-    background-color: #f9f9f9;
-    padding: 20px 0;
-}
 .file_headportrait>.file_headportrait_main{
     position: relative;
 }
@@ -52,15 +48,10 @@
 }
 .file_headportrait>.form-group>.file_headportrait_pic{
     position: relative;
+	background-color: #f9f9f9;
+    padding: 20px 0;
 }
-.file_headportrait>.form-group>.file_headportrait_pic>p{
-    position: absolute;
-    top:50%;
-    left:50%;
-    font-size: 16px;
-    transform:translate(-50%,-50%);
-}
-.file_headportrait>.form-group>.file_headportrait_pic>div>img{
+.file_headportrait>.form-group>.file_headportrait_pic>img{
     width: 150px;
     height: 150px;
 }

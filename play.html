@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>E8内部资料</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/play.css" rel="stylesheet">
+    <link href="css/comm.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/zy.media.min.css">
+</head>
+<body>
+<!--导航栏-->
+<nav class="navbar e8-nav navbar-inverse">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">E8</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control search_box" placeholder="请输入关键字">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                </span>
+                </div>
+            </form>
+            <div class="btn-group pull-right login-btn" role="group" aria-label="...">
+                <a href="login.html" role="button" class="btn btn-default">登录</a>
+                <button type="button" id="register" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="sorry! The register function only open by E8 member.">
+                    注册
+                </button>
+            </div>
+        </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container -->
+</nav>
+<!--视频播放-->
+<div class="play_main">
+    <div class="text-center play_body">
+        <div class="zy_media">
+            <video poster="test.png" data-config='{"mediaTitle": "01-bootstrap简单介绍"}'>
+                <source src="data/2.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</div>
+<!--列表-->
+<div class="container video_list">
+    <ol class="breadcrumb Route">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Laravel 5</a></li>
+        <li class="active">Data</li>
+    </ol>
+    <div class="video_describe detail">
+        <h3>bootstrap</h3>
+        <p class="author">来自：孙龙</p>
+        <p class="describe">
+            Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、
+            CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。
+        </p>
+        <span class="upload_time">2016年7月22日</span>
+    </div>
+    <div class="list-group">
+        <a href="#" class="list-group-item active">
+            Laravel 5 开发 API 教程
+        </a>
+        <a href="#" class="list-group-item clearfix">
+            <p class="col-lg-2 col-md-2 col-xs-2">1</p>
+            <p class="col-lg-8 col-md-8 col-xs-8">初步实现 API 系统</p>
+            <p class="col-lg-2 col-md-2 col-xs-2">08:12</p>
+        </a>
+        <a href="#" class="list-group-item clearfix">
+            <p class="col-lg-2 col-md-2 col-xs-2">1</p>
+            <p class="col-lg-8 col-md-8 col-xs-8">初步实现 API 系统</p>
+            <p class="col-lg-2 col-md-2 col-xs-2">08:12</p>
+        </a>
+        <a href="#" class="list-group-item clearfix">
+            <p class="col-lg-2 col-md-2 col-xs-2">1</p>
+            <p class="col-lg-8 col-md-8 col-xs-8">初步实现 API 系统</p>
+            <p class="col-lg-2 col-md-2 col-xs-2">08:12</p>
+        </a>
+        <a href="#" class="list-group-item clearfix">
+            <p class="col-lg-2 col-md-2 col-xs-2">1</p>
+            <p class="col-lg-8 col-md-8 col-xs-8">初步实现 API 系统</p>
+            <p class="col-lg-2 col-md-2 col-xs-2">08:12</p>
+        </a>
+    </div>
+</div>
+<!--相关推荐-->
+<div class="recommend">
+    <div class="container">
+        <div class="row">
+            <h2 class="video_list_name"><a href="#">猜你喜欢</a></h2>
+            <div class="col-sm-6 col-md-3 col-xs-6">
+                <a href="#">
+                    <div class="e8-list thumbnail">
+                        <img src="pic/video_pic/Git_01.jpg">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                            <p>2016年4月8日</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-xs-6">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="pic/video_pic/Git_02.jpg">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                            <p>2016年4月8日</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-xs-6">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="pic/video_pic/Git_03.jpg">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                            <p>2016年4月8日</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-xs-6">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="pic/video_pic/Git_04.jpg">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p> 用PHP+MySQL+Ajax，页面静态化、数据库备份技术实现你“小全栈”梦想。  </p>
+                            <p>2016年4月8日</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<footer class="footer">
+    <p class="text-center">E8net-3t小组</p>
+</footer>
+<!--回到顶部-->
+<div class="onTop" id="onTop"><span>回到<br />顶部<span></div>
+<!--js-->
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/zy.media.min.js" charset="utf-8"></script>
+<script>
+    (function ($){
+        $(function(){
+            //播放器
+            zymedia('video');
+        });
+    })(jQuery)
+    window.onload = function(){
+        var collect_btn = $("#collect");
+        collect_btn.click(function(){
+            collect_btn.toggleClass('liked');
+        })
+    }
+</script>
+</body>
+</html>
