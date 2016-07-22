@@ -9,12 +9,6 @@ body{
 .play_main>.play_body{
     height: 100%;
 }
-.play_main>.play_body>.zy_media{
-    height:512px!important;
-}
-.play_main>.play_body>.zy_media video{
-    height: 100%!important;
-}
 .detail {
     background-color: #fff;
     margin: 10px 0;

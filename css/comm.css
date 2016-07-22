@@ -120,6 +120,29 @@ footer.footer>p{
 .onTop:hover{
     opacity: 1;
 }
+/*上传页面*/
+.up_file_mian{
+    background-color: #fff;
+    min-height: 500px;
+    margin: 50px auto;
+    padding:20px;
+    position: relative;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+}
+.up_file_mian>.uploader-list{
+    margin-bottom: 50px;
+}
+.up_file_mian>.btns{
+    position:absolute;
+    bottom:20px;
+}
+.up_file_mian>.btns>#picker{
+    float:left;
+    margin-right: 10px;
+}
+.up_file_mian>.btns>.start_upload{
+    height: 42px;
+}
 /*媒体查询*/
 /*手机 (小于等于 768px)*/
 @media (max-width: 767px) {

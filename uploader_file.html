@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>文件上传</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/webuploader.css" rel="stylesheet">
+    <link href="css/comm.css" rel="stylesheet">
+</head>
+<body>
+<!-- 上传页面 -->
+<div id="uploader" class="wu-example container up_file_mian">
+    <h3 class="text-center">文件上传</h3>
+    <!--用来存放文件信息-->
+    <div class="uploader-list">
+        <table class="table">
+        <thead>
+            <tr>
+                <th>文件名</th>
+                <th>大小</th>
+                <th>类型</th>
+                <th>状态</th>
+                <th>进度</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="thelist">
+        </tbody>
+        </table>
+    </div>
+    <div class="btns">
+        <div id="picker" class="choose_file">选择文件</div>
+        <button id="ctlBtn" class="btn btn-default start_upload">开始上传</button>
+    </div>
+</div>
+<!--底部-->
+<footer class="footer">
+    <p class="text-center">E8net-3t小组</p>
+</footer>
+<!--js-->
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/webuploader.min.js"></script>
+<script>
+ $(function(){
+    var $list = $('#thelist');
+    var uploader = WebUploader.create({
+
+        // swf文件路径
+        swf: './js/Uploader.swf',
+
+        // 文件接收服务端。
+        server: 'http://webuploader.duapp.com/server/fileupload.php',
+
+        // 选择文件的按钮。可选。
+        // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+        pick: '#picker',
+
+        // 不压缩image, 默认如果是jpeg，文件上传前会压缩一把再上传！
+        resize: false
+    });
+    // 当有文件被添加进队列的时候
+    uploader.on( 'fileQueued', function( file ) {
+        $list.append( '<tr id='+ file.id +'><td>'+file.name
+                +'</td><td>'+(file.size/1048576).toFixed(2)
+                +'MB</td><td>'+file.type
+                +'</td><td class="statusText">'+file.statusText
+                +'</td><td class="status">0%</td><td><a onclick="removeThisFile(this)" class="btn btn-link btn-xs"><i class="glyphicon glyphicon-trash"></i></a></td></tr>' );
+    });
+    // 文件上传过程中创建进度条实时显示。
+    uploader.on( 'uploadProgress', function( file, percentage ) {
+        var $tr = $( '#'+file.id ),
+            $percent = $tr.find('.status');
+
+        // 避免重复创建
+        if ( !$percent.length ) {
+            $percent = $tr.find('.status').html(file.percentage + '%');
+        }
+    });
+    //文件成功、失败处理
+    uploader.on( 'uploadSuccess', function( file ) {
+        $( '#'+file.id ).find('.statusText').text('已上传');
+    });
+
+    uploader.on( 'uploadError', function( file ) {
+        $( '#'+file.id ).find('.statusText').text('上传出错');
+    });
+    // 上传
+    $('#ctlBtn').click(function () {
+        uploader.upload()
+    });
+    // 移除文件
+    window.removeThisFile = function (elem) {
+        var fildId = $(elem).parent().parent().attr('id');
+        $('#'+fildId).remove();
+        uploader.removeFile(fildId, true);
+    }
+ });
+</script>
+</body>
+</html>
